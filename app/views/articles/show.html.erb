@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <article>
+      <h1>
+        <%= @article.title %>
+        <small><%= link_to 'Edit', edit_article_path(@article) %></small>
+        <small><%= link_to 'Delete', article_path(@article), method: :delete %></small>
+      </h1>
+      <hr>
+      <p><%= @article.content %></p>
+    </article>
+  </div>
+</div>
